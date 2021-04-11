@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Интернет-магазин Nimes</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <div class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link link">Woman</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link link">Man</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link link">New</a>
+          </li>
+        </ul>
+      </div>
+      <div class="logo">
+        <a href="./index.html">
+          <img src="./img/logo.png" alt="Logo Mines" class="logo__img">
+        </a>
+      </div>
+      <div class="user-features">
+        <a href="./profile.html" class="user-features__user link">User</a>
+        <a href="#"><img src="./img/search.svg" alt="Search" class="user-features__search"></a>
+        <a href="#"><img src="./img/cart.svg" alt="Cart" class="user-features__cart"></a>
+      </div>
+    </div>
+  </header>
+  <div class="intro">
+    <div class="intro__wrapper container">
+      <div class="intro__description">
+        <div class="intro__text">
+          <a href="#" class="link">
+            <p class="intro__text-categories intro__text-allcategories">All categories</p>
+          </a>
+          <p class="intro__text-categories">/</p>
+          <a href="#" class="link">
+            <p class="intro__text-categories">Woman</p>
+          </a>
+          <p class="intro__text-categories">/</p>
+          <a href="#" class="link">
+            <p class="intro__text-categories selected">Jackets</p>
+          </a>
+        </div>
+        <span class="intro__span">Denim Collection Fall 2019</span>
+      </div>
+      <div class="intro__image">
+        <img src="./img/line_down.svg" alt="intro_line" class="intro__line-1" />
+        <img src="./img/intro_2.jpg" alt="Collection fall 2019" class="intro__img" />
+        <img src="./img/line_down.svg" alt="intro_line" class="intro__line-2" />
+      </div>
+    </div>
+  </div>
+
+  <main class="main-content container">
+    <div class="filter">
+      <input type="text" list="filter" placeholder="Filter by" class="filter__input">
+      <datalist id="filter">
+        <option>Filter_1</option>
+        <option>Filter_2</option>
+        <option>Filter_3</option>
+      </datalist>
+    </div>
+    <div class="jacket">
+      <div class="jacket__wrapper">
+        <a href="#" class="link">
+          <img src="./img/jacket_1.jpg" alt="jacket 1" class="jacket__img">
+          <span class="jacket__title">Jacket</span>
+          <span class="jacket__price">&#36;40</span>
+        </a>
+      </div>
+      <div class="jacket__wrapper">
+        <a href="#" class="link">
+          <img src="./img/jacket_2.jpg" alt="jacket 2" class="jacket__img">
+          <span class="jacket__title">Jacket</span>
+          <span class="jacket__price">&#36;70</span>
+        </a>
+      </div>
+      <div class="jacket__wrapper">
+        <a href="#" class="link">
+          <img src="./img/jacket_3.jpg" alt="jacket 3" class="jacket__img">
+          <span class="jacket__title">Jacket</span>
+          <span class="jacket__price">&#36;60</span>
+        </a>
+      </div>
+      <div class="jacket__wrapper">
+        <a href="#" class="link">
+          <img src="./img/jacket_4.jpg" alt="jacket 4" class="jacket__img">
+          <span class="jacket__title">Jacket</span>
+          <span class="jacket__price">&#36;50</span>
+        </a>
+      </div>
+      <div class="jacket__wrapper">
+        <a href="#" class="link">
+          <img src="./img/jacket_5.jpg" alt="jacket 5" class="jacket__img">
+          <span class="jacket__title">Jacket</span>
+          <span class="jacket__price">&#36;40</span>
+        </a>
+      </div>
+      <div class="jacket__wrapper">
+        <a href="#" class="link">
+          <img src="./img/jacket_6.jpg" alt="jacket 6" class="jacket__img">
+          <span class="jacket__title">Jacket</span>
+          <span class="jacket__price">&#36;110</span>
+        </a>
+      </div>
+      <div class="jacket__wrapper">
+        <a href="#" class="link">
+          <img src="./img/jacket_7.jpg" alt="jacket 7" class="jacket__img">
+          <span class="jacket__title">Jacket</span>
+          <span class="jacket__price">&#36;35</span>
+        </a>
+      </div>
+      <div class="jacket__wrapper">
+        <a href="#" class="link">
+          <img src="./img/jacket_8.jpg" alt="jacket 8" class="jacket__img">
+          <span class="jacket__title">Jacket</span>
+          <span class="jacket__price">&#36;85</span>
+        </a>
+      </div>
+    </div>
+    <div class="showing-items">
+      <div>
+        <span class="showing-items__span">
+          Showing 9 of 45 items
+        </span>
+        <div class="showing-items__loading-bar"></div>
+      </div>
+      <div class="showing-items__button">
+        <button class="showing-items__button-load link">Load more</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container container">
+      <a href="index.html" class="logo-link link"><img src="./img/logo_white.png" alt="Start page Nimes" /></a>
+      <ul class="nav footer__list">
+        <li class="nav__item footer__item">
+          <a href="#" class="footer__link link">Shop</a>
+        </li>
+        <li class="nav__item footer__item">
+          <a href="#" class="footer__link link">Delivery</a>
+        </li>
+        <li class="nav__item footer__item">
+          <a href="#" class="footer__link link">Service</a>
+        </li>
+        <li class="nav__item footer__item">
+          <a href="#" class="footer__link link">Sitemap</a>
+        </li>
+        <li class="nav__item footer__item">
+          <a href="./contacts.html" class="footer__link link" target="_blank">Contacts</a>
+        </li>
+      </ul>
+      <ul class="nav social">
+        <li class="nav__item social__item">
+          <a href="https://ru-ru.facebook.com" class="social__link" target="_blank"><img src="./img/fb.svg"
+              alt="Facebook" class="social__logo" /></a>
+        </li>
+        <li class="nav__item social__item">
+          <a href="https://www.instagram.com/?hl=ru" class="social__link" target="_blank"><img src="./img/inst.svg"
+              alt="Instagram" class="social__logo" /></a>
+        </li>
+        <li class="nav__item social__item">
+          <a href="https://www.pinterest.ru/" class="social__link" target="_blank"><img src="./img/pint.svg"
+              alt="Pinteres" class="social__logo" /></a>
+        </li>
+        <li class="nav__item social__item">
+          <a href="https://twitter.com/?lang=ru" class="social__link" target="_blank"><img src="./img/twitter.svg"
+              alt="Twitter" class="social__logo" /></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>

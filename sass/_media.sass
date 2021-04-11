@@ -1,0 +1,595 @@
+@media (max-width: 1365px) and (min-width: 1201px)
+  .profile
+    &__photo-history
+      padding-right: 40px
+      padding-left: 10px
+    &__information
+      width: 575px
+      padding-left: 40px
+    &-container
+      width: 1200px
+  .contacts
+    padding-left: 0
+    &-container
+      width: 1200px
+    &__fieldset
+      margin: 0 auto
+
+@media (max-width: 1200px) and (min-width: 992px)
+  .container
+    width: 900px
+
+  //for Nimes
+  .intro-wrapper
+    padding: 48px 80px
+
+  .bestsellers
+    &__card
+      max-width: 210px
+  .news
+    &__bg
+      width: 60%
+      height: fit-content
+    &__content
+      width: 50%
+    &__card
+      padding: 0
+
+  //for Catalog
+  .jacket
+    gap: 55px 30px
+    -ms-grid-rows: 1fr 30px 1fr
+    -ms-grid-columns: 1fr 55px 1fr 55px 1fr 55px 1fr
+    &__wrapper
+      //миксин объявлен в _var.sass
+      &:nth-child(1)
+        @include grid-position-IE(1, 1)
+      &:nth-child(2)
+        @include grid-position-IE(3, 1)
+      &:nth-child(3)
+        @include grid-position-IE(5, 1)
+      &:nth-child(4)
+        @include grid-position-IE(7, 1)
+      &:nth-child(5)
+        @include grid-position-IE(1, 3)
+      &:nth-child(6)
+        @include grid-position-IE(3, 3)
+      &:nth-child(7)
+        @include grid-position-IE(5, 3)
+      &:nth-child(8)
+        @include grid-position-IE(7, 3)
+
+  //for Profile
+  .profile
+    display: block
+    &__photo-history
+      padding: 0 0 60px 0
+    &__information
+      margin-left: 0
+      width: 95%
+      &-wrapper
+        padding-bottom: 60px
+    &__history
+      width: 95%
+      padding-bottom: 60px
+
+  //for Contacts
+  .contacts
+    padding-left: 0
+    &__fieldset
+      margin: 0 auto
+
+@media (max-width: 991px) and (min-width: 768px)
+  .container
+    width: 90%
+
+  .section-header
+    padding-top: 60px
+
+  .intro
+    &__wrapper
+      padding: 0
+    &-wrapper
+      padding: 0
+    &__img
+      width: 300px
+    &__image-index
+      display: none
+    &__image
+      &-1
+        top: -25px
+        left: -25px
+      &-2
+        bottom: -25px
+        right: -25px
+  .content-wrapper
+    flex-wrap: wrap
+  .bestsellers
+    &__card
+      width: 350px
+      padding-bottom: 20px
+    &__header
+      padding-top: 90px
+  .news
+    &__bg
+      padding-bottom: 0
+      width: 100%
+    &__card
+      padding: 0
+  .shop
+    &__wrapper
+      grid-template-columns: repeat(2, 1fr)
+      grid-template-rows: min-content
+      &__img
+        width: 100%
+
+  .jackets
+    &-bg
+      grid-row: 3
+    &-title
+      grid-row: 4
+  .overalls
+    &-bg
+      grid-row: 3
+    &-title
+      grid-row: 4
+  .category-title
+    padding-bottom: 30px
+    display: block
+
+  .jacket
+    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr
+    -ms-grid-rows: 1fr 30px 1fr 30px 1fr 30px 1fr
+    -ms-grid-columns: 1fr 55px 1fr
+    &__wrapper
+      //миксин объявлен в _var.sass
+      &:nth-child(1)
+        @include grid-position-IE(1, 1)
+      &:nth-child(2)
+        @include grid-position-IE(3, 1)
+      &:nth-child(3)
+        @include grid-position-IE(1, 3)
+      &:nth-child(4)
+        @include grid-position-IE(3, 3)
+      &:nth-child(5)
+        @include grid-position-IE(1, 5)
+      &:nth-child(6)
+        @include grid-position-IE(3, 5)
+      &:nth-child(7)
+        @include grid-position-IE(1, 7)
+      &:nth-child(8)
+        @include grid-position-IE(3, 7)
+
+  .profile
+    display: block
+    &__photo-history
+      padding: 0 0 60px 0
+    &__information
+      margin-left: 0
+      width: 95%
+      &-wrapper
+        padding-bottom: 60px
+    &__history
+      width: 95%
+      padding-bottom: 60px
+
+  .contacts
+    padding-left: 0
+    &__fieldset
+      margin: 0 auto
+
+@media (max-width: 767px) and (min-width: 481px)
+  .container
+    width: 95%
+  .section-header
+    padding-top: 60px
+
+  .nav__list
+    width: 150px
+
+  .user-features
+    width: 140px
+    padding-left: 30px
+
+  .intro
+    padding: 25px 0
+    &-wrapper
+      padding: 0
+    &__image-index
+      display: none
+    &__image
+      display: none
+    &__wrapper
+      padding: 0
+
+    &__description
+      padding-right: 30px
+
+    &__image
+      height: 175px
+
+    &__text
+      font-size: 10px
+
+    &__span
+      font-size: 26px
+
+    &__img
+      width: 200px
+
+    &__line-1
+      width: 100px
+      right: -12px
+
+    &__line-2
+      width: 100px
+      height: 78px
+      left: -12px
+
+  .content-wrapper
+    flex-wrap: wrap
+  .bestsellers
+    &__card
+      width: 350px
+      padding-bottom: 20px
+    &__header
+      padding-top: 90px
+  .news
+    &__bg
+      margin-bottom: 0
+      width: 100%
+    &__card
+      padding: 0
+  .shop
+    &__wrapper
+      grid-template-columns: repeat(2, 1fr)
+      grid-template-rows: min-content
+      &__img
+        width: 100%
+  .jackets
+    &-bg
+      grid-row: 3
+    &-title
+      grid-row: 4
+  .overalls
+    &-bg
+      grid-row: 3
+    &-title
+      grid-row: 4
+  .category-title
+    padding-bottom: 30px
+    display: block
+
+  .filter__input
+    height: 40px
+    width: 200px
+    &::placeholder
+      font-size: 14px
+      font-weight: 500
+
+  .filter:before
+    top: 55%
+    right: 20px
+    margin-top: -10px
+    width: 8px
+    height: 8px
+    border-right: 2px solid black
+    border-bottom: 2px solid black
+
+  .jacket
+    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr
+    -ms-grid-rows: 1fr 30px 1fr 30px 1fr 30px 1fr
+    -ms-grid-columns: 1fr 55px 1fr
+    &__wrapper
+      //миксин объявлен в _var.sass
+      &:nth-child(1)
+        @include grid-position-IE(1, 1)
+      &:nth-child(2)
+        @include grid-position-IE(3, 1)
+      &:nth-child(3)
+        @include grid-position-IE(1, 3)
+      &:nth-child(4)
+        @include grid-position-IE(3, 3)
+      &:nth-child(5)
+        @include grid-position-IE(1, 5)
+      &:nth-child(6)
+        @include grid-position-IE(3, 5)
+      &:nth-child(7)
+        @include grid-position-IE(1, 7)
+      &:nth-child(8)
+        @include grid-position-IE(3, 7)
+
+  .link
+    font-size: 14px
+
+  .showing-items
+    &__span
+      font-size: 16px
+
+    &__loading-bar
+      width: 180px
+
+    &__button-load
+      height: 45px
+      width: 180px
+      font-size: 16px
+
+  .profile
+    display: block
+    &__photo-history
+      padding: 0 0 60px 0
+    &__information
+      margin-left: 0
+      padding-top: 50px
+      padding-left: 20px
+      width: 97%
+      &-wrapper
+        padding: 20px 0 60px 200px
+      &-input
+        width: 290px
+      &-textarea
+        width: 415px
+      &-list
+        width: 85%
+        &:before
+          right: 58px
+        &:after
+          right: 47px
+      &-gender
+        width: 85%
+    &__history
+      width: 97%
+      padding-left: 20px
+      &-content
+        grid-template-columns: 93px 164px 20px 75px
+    &__photo
+      padding-left: 30px
+
+  .contacts
+    padding-left: 0
+    &__fieldset
+      margin: 0 auto
+      width: 425px
+    &__information
+      &-container
+        grid-template-columns: 109px 265px
+      &-input
+        width: 265px
+      &-textarea
+        width: 375px
+
+@media (max-width: 480px)
+  .container
+    width: 97%
+  .section-header
+    padding-top: 60px
+  .nav__list
+    width: 110px
+
+  .user-features
+    padding-left: 0
+    width: 85px
+
+  .intro
+    padding: 25px 0
+    &__wrapper
+      padding: 0
+    &-wrapper
+      padding: 0
+
+    &__description
+      padding-right: 30px
+    &__image-index
+      display: none
+
+    &__image
+      display: none
+      &-1,
+      &-2
+        display: none
+
+    &__text-categories
+      font-size: 10px
+
+    &__span
+      font-size: 26px
+      &-index
+        font-size: 112px
+
+    &__img
+      width: 200px
+
+    &__line-1
+      width: 100px
+      right: -12px
+
+    &__line-2
+      width: 100px
+      height: 78px
+      left: -12px
+
+  .content-wrapper
+    flex-wrap: wrap
+    justify-content: center
+    padding-top: 40px
+  .bestsellers
+    &__card
+      width: 100%
+      padding-bottom: 20px
+    &__header
+      padding-top: 40px
+  .news
+    &__bg
+      display: none
+    &__card
+      padding: 0
+  .shop
+    &__wrapper
+      grid-template-columns: 1fr
+      grid-template-rows: min-content
+      &__img
+        width: 100%
+  .jeans-title
+    grid-row: 2px
+  .shirts
+    &-bg
+      grid-row: 3
+    &-title
+      grid-row: 4
+  .jackets
+    &-bg
+      grid-row: 5
+    &-title
+      grid-row: 6
+  .overalls
+    &-bg
+      grid-row: 7
+    &-title
+      grid-row: 8
+  .category-title
+    padding-bottom: 30px
+    display: block
+
+  .filter__input
+    height: 40px
+    width: 200px
+    &::placeholder
+      font-size: 14px
+      font-weight: 500
+
+  .filter:before
+    top: 55%
+    right: 20px
+    margin-top: -10px
+    width: 8px
+    height: 8px
+    border-right: 2px solid black
+    border-bottom: 2px solid black
+
+  .jacket
+    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr / 1fr
+    -ms-grid-rows: 1fr 30px 1fr 30px 1fr 30px 1fr 30px 1fr 30px 1fr 30px 1fr 30px 1fr
+    -ms-grid-columns: 1fr
+    &__wrapper
+      //миксин объявлен в _var.sass
+      &:nth-child(1)
+        @include grid-position-IE(1, 1)
+      &:nth-child(2)
+        @include grid-position-IE(1, 3)
+      &:nth-child(3)
+        @include grid-position-IE(1, 5)
+      &:nth-child(4)
+        @include grid-position-IE(1, 7)
+      &:nth-child(5)
+        @include grid-position-IE(1, 9)
+      &:nth-child(6)
+        @include grid-position-IE(1, 11)
+      &:nth-child(7)
+        @include grid-position-IE(1, 13)
+      &:nth-child(8)
+        @include grid-position-IE(1, 15)
+
+  .link
+    font-size: 12px
+
+  .showing-items
+    &__span
+      font-size: 16px
+
+    &__loading-bar
+      width: 180px
+
+    &__button-load
+      height: 45px
+      width: 180px
+      wont-size: 16px
+
+  .profile
+    display: block
+    &__photo-history
+      padding: 0 0 60px 0
+    &__information
+      margin-left: 0
+      padding-top: 50px
+      padding-left: 20px
+      width: 100%
+      &-container
+        grid-template-columns: 40% 60%
+      &-wrapper
+        padding: 20px 0 60px 120px
+      &-option
+        font-weight: 300
+        font-size: 12px
+        line-height: 21px
+      &-input
+        width: 97%
+        &::placeholder
+          font-weight: 300
+          font-size: 12px
+          line-height: 21px
+      &-textarea
+        width: 98%
+      &-button
+        width: 130px
+        height: 34px
+      &-list
+        width: 100%
+        &:before
+          right: 10%
+          top: 55%
+          width: 6px
+          height: 6px
+        &:after
+          right: 7%
+          top: 2px
+      &-gender
+        width: 155px
+      &-label
+        padding-right: 5px
+        &-radio
+          display: flex
+          padding-right: 10px
+          font-size: 12px
+          align-items: center
+      &-radio
+        padding: 0 30px 0 8px
+        font-size: 12px
+        width: 12px
+        height: 12px
+    &__history
+      width: 100%
+      padding-left: 20px
+      &-content
+        grid-template-columns: 80px 90px 12px 49px
+        gap: 10px
+        font-size: 14px
+      &-prise
+        font-size: 14px
+    &__photo
+      padding-left: 0
+      width: 100%
+      img
+        width: 100%
+
+  .contacts
+    padding-left: 0
+    &__fieldset
+      margin: 0 auto
+      width: 97%
+    &__information
+      &-container
+        grid-template-columns: 23% 77%
+      &-label
+        font-size: 16px
+      &-input
+        width: 90%
+        &::placeholder
+          font-weight: 300
+          font-size: 16px
+          line-height: 21px
+      &-textarea
+        width: 93%
+      &-button
+        display: block
+        width: 70%
+        height: 45px

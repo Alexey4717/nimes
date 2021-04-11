@@ -1,0 +1,65 @@
+.contacts-container
+  width: 1366px
+  margin: 0 auto
+  padding-bottom: 120px!important
+
+  &__wrapper
+    padding-top: 60px
+
+.contacts
+  padding: 56px 0 83px 384px
+  background: #F1F2F4
+
+  &__fieldset
+    width: 568px
+    border: 2px solid #151C22
+  &__legend
+    display: block
+    font-family: Work Sans
+    font-style: normal
+    font-weight: bold
+    font-size: 32px
+    line-height: 38px
+    margin-left: 15px
+    padding: 0 5px
+    max-width: 190px
+  &__information
+    &-container
+      display: grid
+      grid-template: 1fr 1fr 1fr / 109px 390px
+      gap: 27px 0
+      padding: 52px 0 0 19px
+
+    &-label
+      font-family: Work Sans
+      font-style: normal
+      font-weight: 500
+      font-size: 18px
+      line-height: 21px
+      align-self: center
+    @include input(392px, 52px)
+    &-span
+      display: block
+      padding-bottom: 12px
+      max-width: 200px
+
+    &-message
+      padding: 66px 0 0 18px
+
+    &-textarea
+      width: 502px
+      height: 202px
+      border: 2px solid #151C22
+      background: #F1F2F4
+      resize: none
+
+    &-wrapper
+      padding: 53px 0 38px 170px
+
+    &-button
+      width: 200px
+      height: 64px
+      background: #151C22
+      color: white
+      font-weight: 700
+      cursor: pointer
