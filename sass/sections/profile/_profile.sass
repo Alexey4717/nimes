@@ -1,0 +1,136 @@
+.profile-container
+  width: 1366px
+  margin: 0 auto
+  padding-bottom: 114px!important
+
+.profile
+  display: flex
+  align-items: stretch
+  padding-top: 55px
+
+  &__photo-history
+    padding-right: 130px
+
+  &__photo
+    padding-left: 168px
+    padding-bottom: 93px
+
+  &__history
+    padding: 45px 0 188px 69px
+    font-size: 18px
+    background: #F1F2F4
+
+    &-header
+      display: block
+      font-weight: 900
+      padding-bottom: 25px
+      max-width: 300px
+
+    &-content
+      display: grid
+      grid-template-columns: 93px 192px 20px 75px
+      gap: 30px
+      padding-bottom: 34px
+    &-date
+    &-model
+      font-weight: 600
+    &-prise
+      font-weight: 700
+      font-size: 16px
+
+  &__information
+    padding: 62px 0 0 70px
+    background: #F1F2F4
+    width: 668px
+    &-header
+      font-size: 32px
+      font-weight: 600
+    &-container
+      display: grid
+      grid-template: 1fr 1fr 1fr 1fr / 109px 390px
+      gap: 19px 0
+      padding-top: 59px
+    &-container:nth-child(2)
+      padding-top: 56px
+    &-about
+      padding-top: 68px
+    &-label
+      font-family: Work Sans
+      font-style: normal
+      font-weight: 500
+      font-size: 18px
+      line-height: 21px
+      align-self: center
+    &-span
+      display: block
+      padding-bottom: 12px
+    @include input(389px, 50px)
+
+    &-option
+      font-family: Work Sans
+      font-style: normal
+      font-weight: 500
+      font-size: 18px
+      line-height: 21px
+      padding-left: 26px
+      color: #757575
+    &-gender
+      display: flex
+      align-items: center
+    &-label
+      padding-right: 35px
+      &-radio
+        display: flex
+        padding: 0 56px 0 2px
+        font-size: 16px
+        align-items: center
+    &-radio
+      padding: 0 16px 0 18px
+      font-size: 16px
+      width: 15px
+      height: 15px
+      &:checked
+        background: #151C22
+    &-textarea
+      width: 500px
+      height: 200px
+      border: 2px solid #151C22
+      background: #F1F2F4
+      resize: none
+    &-wrapper
+      padding: 55px 0 0 300px
+    &-button
+      padding: 20px 0 40px 0px
+      width: 200px
+      height: 64px
+      background: #151C22
+      color: white
+      font-weight: 700
+      cursor: pointer
+    &-list
+      position: relative
+      &:before, &:after
+        content: ''
+        position: absolute
+        pointer-events: none
+
+      &:after
+        top: 2px
+        right: 5px
+        width: 20px
+        height: 90%
+        background: #F1F2F4
+        transition: .3s
+        cursor: pointer
+
+      &:before
+        top: 50%
+        right: 20px
+        margin-top: -10px
+        width: 10px
+        height: 10px
+        border-right: 2px solid black
+        border-bottom: 2px solid black
+        transform: rotate(45deg)
+        z-index: 10
+        cursor: pointer

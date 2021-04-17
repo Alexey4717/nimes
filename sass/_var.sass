@@ -1,0 +1,36 @@
+$color: #151c22
+
+$intro-text-color: #727a82
+
+$link-hover: red
+
+@mixin grid-position-IE($column, $row)
+  -ms-grid-column: $column
+  -ms-grid-row: $row
+
+@mixin input($width, $height)
+  &-input
+    width: $width
+    height: $height
+    border: 2px solid #151C22
+    background: #F1F2F4
+    padding-left: 28px
+    &::placeholder
+      font-family: Work Sans
+      font-style: normal
+      font-weight: 500
+      font-size: 18px
+      line-height: 21px
+
+@mixin wrapper($top, $right, $bottom, $left)
+  padding: $top $right $bottom $left
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+@mixin intro-text()
+  margin: 0
+  align-items: center
+  font-weight: normal
+  line-height: 21px
+  color: $intro-text-color

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Интернет-магазин Nimes</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <div class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link link">Woman</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link link">Man</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link link">New</a>
+          </li>
+        </ul>
+      </div>
+      <div class="logo">
+        <a href="./index.html">
+          <img src="./img/logo.png" alt="Logo Mines" class="logo__img">
+        </a>
+      </div>
+      <div class="user-features">
+        <a href="./profile.html" class="user-features__user link">User</a>
+        <a href="#"><img src="./img/search.svg" alt="Search" class="user-features__search" /></a>
+        <a href="#"><img src="./img/cart.svg" alt="Cart" class="user-features__cart" /></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content contacts-container container">
+    <div class="contacts-container__wrapper">
+      <form action="#" class="contacts">
+        <fieldset class="contacts__fieldset">
+          <legend class="contacts__legend">Contact us</legend>
+          <div class="contacts__information-container">
+            <label for="name" class="contacts__information-label">Name</label>
+            <input type="text" id="name" class="contacts__information-input" placeholder="Enter your name" required>
+            <label for="mail" class="contacts__information-label">E-mail</label>
+            <input type="text" id="mail" class="contacts__information-input" placeholder="Enter your e-mail" required>
+            <label for="phone" class="contacts__information-label">Phone</label>
+            <input type="text" id="phone" class="contacts__information-input" placeholder="Enter your phone">
+          </div>
+          <div class="contacts__information-message">
+            <span class="contacts__information-label contacts__information-span">Your message</span>
+            <textarea class="contacts__information-textarea" maxlength="100"></textarea>
+          </div>
+          <div class="contacts__information-wrapper">
+            <button class="contacts__information-button link">Send</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container container">
+      <a href="index.html" class="logo-link link"><img src="./img/logo_white.png" alt="Start page Nimes" /></a>
+      <ul class="nav footer__list">
+        <li class="nav__item footer__item">
+          <a href="#" class="footer__link link">Shop</a>
+        </li>
+        <li class="nav__item footer__item">
+          <a href="#" class="footer__link link">Delivery</a>
+        </li>
+        <li class="nav__item footer__item">
+          <a href="#" class="footer__link link">Service</a>
+        </li>
+        <li class="nav__item footer__item">
+          <a href="#" class="footer__link link">Sitemap</a>
+        </li>
+        <li class="nav__item footer__item">
+          <a href="./contacts.html" class="footer__link link" target="_blank">Contacts</a>
+        </li>
+      </ul>
+      <ul class="nav social">
+        <li class="nav__item social__item">
+          <a href="https://ru-ru.facebook.com" class="social__link" target="_blank"><img src="./img/fb.svg"
+              alt="Facebook" class="social__logo" /></a>
+        </li>
+        <li class="nav__item social__item">
+          <a href="https://www.instagram.com/?hl=ru" class="social__link" target="_blank"><img src="./img/inst.svg"
+              alt="Instagram" class="social__logo" /></a>
+        </li>
+        <li class="nav__item social__item">
+          <a href="https://www.pinterest.ru/" class="social__link" target="_blank"><img src="./img/pint.svg"
+              alt="Pinteres" class="social__logo" /></a>
+        </li>
+        <li class="nav__item social__item">
+          <a href="https://twitter.com/?lang=ru" class="social__link" target="_blank"><img src="./img/twitter.svg"
+              alt="Twitter" class="social__logo" /></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>

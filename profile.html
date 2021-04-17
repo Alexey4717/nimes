@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Интернет-магазин Nimes</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <div class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link link">Woman</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link link">Man</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link link">New</a>
+          </li>
+        </ul>
+      </div>
+      <div class="logo">
+        <a href="./index.html">
+          <img src="./img/logo.png" alt="Logo Mines" class="logo__img">
+        </a>
+      </div>
+      <div class="user-features">
+        <a href="./profile.html" class="user-features__user link">User</a>
+        <a href="#"><img src="./img/search.svg" alt="Search" class="user-features__search"></a>
+        <a href="#"><img src="./img/cart.svg" alt="Cart" class="user-features__cart"></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content profile-container container">
+    <div class="profile">
+      <div class="profile__photo-history">
+        <div class="profile__photo">
+          <img src="./img/profile_photo.png" alt="Profile-photo">
+        </div>
+        <div class="profile__history">
+          <span class="profile__history-header">History</span>
+          <div class="profile__history-content">
+            <span class="profile__history-date">28.02.1990</span>
+            <span class="profile__history-model">Jacket</span>
+            <span class="profile__history-amount">1</span>
+            <span class="profile__history-prise">&#36;60</span>
+          </div>
+          <div class="profile__history-content">
+            <span class="profile__history-date">15.07.2002</span>
+            <span class="profile__history-model">Jacket Black XXL</span>
+            <span class="profile__history-amount">1</span>
+            <span class="profile__history-prise">&#36;260</span>
+          </div>
+          <div class="profile__history-content">
+            <span class="profile__history-date">07.09.2003</span>
+            <span class="profile__history-model">Overalls</span>
+            <span class="profile__history-amount">5</span>
+            <span class="profile__history-prise">&#36;6000</span>
+          </div>
+          <div class="profile__history-content">
+            <span class="profile__history-date">15.09.2003</span>
+            <span class="profile__history-model">Model White Extra</span>
+            <span class="profile__history-amount">1</span>
+            <span class="profile__history-prise">&#36;58</span>
+          </div>
+          <div class="profile__history-content">
+            <span class="profile__history-date">25.05.2005</span>
+            <span class="profile__history-model">Jacket</span>
+            <span class="profile__history-amount">1</span>
+            <span class="profile__history-prise">&#36;8</span>
+          </div>
+          <div class="profile__history-content">
+            <span class="profile__history-date">28.02.2020</span>
+            <span class="profile__history-model">Jacket</span>
+            <span class="profile__history-amount">3</span>
+            <span class="profile__history-prise">&#36;60</span>
+          </div>
+        </div>
+      </div>
+      <form class="profile__information">
+        <span class="profile__information-header">Your profile</span>
+        <div class="profile__information-container">
+          <label for="name" class="profile__information-label">Name</label>
+          <input type="text" id="name" class="profile__information-input" placeholder="Enter your name" required>
+          <label for="surname" class="profile__information-label">Surname</label>
+          <input type="text" id="surname" class="profile__information-input" placeholder="Enter your surname" required>
+          <label for="birthday" class="profile__information-label">Birthday</label>
+          <input type="text" id="birthday" class="profile__information-input" placeholder="Enter your birthday">
+          <span class="profile__information-label">Gender</span>
+          <div class="profile__information-gender">
+            <label class="profile__information-label-radio">
+              <input type="radio" name="gender" checked>
+              <span class="profile__information-radio">Male</span>
+            </label>
+            <label class="profile__information-label-radio">
+              <input type="radio" name="gender" class="profile__information-radio">
+              <span class="profile__information-radio">Female</span>
+            </label>
+          </div>
+        </div>
+        <div class="profile__information-container">
+          <label for="country" class="profile__information-label">Country</label>
+          <div class="profile__information-list">
+            <select id="country" class="profile__information-input profile__information-option">
+              <option value="" disabled selected hidden>Select your country</option>
+              <option>America</option>
+              <option>Russia</option>
+              <option>Germany</option>
+            </select>
+          </div>
+          <label for="city" class="profile__information-label">City</label>
+          <div class="profile__information-list">
+            <input list="cities" id="city" class="profile__information-input" placeholder="Select your city">
+            <datalist id="cities">
+              <option value="New-York"></option>
+              <option value="Las-Vegas"></option>
+            </datalist>
+          </div>
+          <label for="mail" class="profile__information-label">E-mail</label>
+          <input type="text" id="mail" class="profile__information-input" placeholder="Enter your e-mail"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})">
+          <label for="phone" class="profile__information-label">Phone</label>
+          <input type="text" id="phone" class="profile__information-input" placeholder="Enter your phone"
+            pattern="[0-9]{3}[ -][0-9]{3}[ -][0-9]{4}">
+        </div>
+        <div class="profile__information-about">
+          <span class="profile__information-label profile__information-span">About yourself</span>
+          <textarea class="profile__information-textarea"></textarea>
+        </div>
+        <div class="profile__information-wrapper">
+          <button class="profile__information-button link">Save</button>
+        </div>
+      </form>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container container">
+      <a href="index.html" class="logo-link link"><img src="./img/logo_white.png" alt="Start page Nimes"></a>
+      <ul class="nav footer__list">
+        <li class="nav__item footer__item">
+          <a href="#" class="footer__link link">Shop</a>
+        </li>
+        <li class="nav__item footer__item">
+          <a href="#" class="footer__link link">Delivery</a>
+        </li>
+        <li class="nav__item footer__item">
+          <a href="#" class="footer__link link">Service</a>
+        </li>
+        <li class="nav__item footer__item">
+          <a href="#" class="footer__link link">Sitemap</a>
+        </li>
+        <li class="nav__item footer__item">
+          <a href="./contacts.html" class="footer__link link" target="_blank">Contacts</a>
+        </li>
+      </ul>
+      <ul class="nav social">
+        <li class="nav__item social__item">
+          <a href="https://ru-ru.facebook.com" class="social__link" target="_blank"><img src="./img/fb.svg"
+              alt="Facebook" class="social__logo"></a>
+        </li>
+        <li class="nav__item social__item">
+          <a href="https://www.instagram.com/?hl=ru" class="social__link" target="_blank"><img src="./img/inst.svg"
+              alt="Instagram" class="social__logo"></a>
+        </li>
+        <li class="nav__item social__item">
+          <a href="https://www.pinterest.ru/" class="social__link" target="_blank"><img src="./img/pint.svg"
+              alt="Pinteres" class="social__logo"></a>
+        </li>
+        <li class="nav__item social__item">
+          <a href="https://twitter.com/?lang=ru" class="social__link" target="_blank"><img src="./img/twitter.svg"
+              alt="Twitter" class="social__logo"></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>
